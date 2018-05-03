@@ -1,4 +1,4 @@
-# First XGBoost model for Pima Indians dataset
+# Practice XGBoost model for Pima Indians dataset
 import pandas as pd
 from numpy import loadtxt
 from xgboost import XGBClassifier
