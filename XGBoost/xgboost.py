@@ -27,7 +27,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.75, random
 
 
 # fit model no training data
-model = xgboost. XGBRegressor(max_depth=2, learning_rate=0.45, n_estimators=800, silent=True, objective='reg:linear', nthread=-1, gamma=0.008, min_child_weight=1, max_delta_step=1, subsample=1, colsample_bytree=1, colsample_bylevel=1, reg_alpha=0, reg_lambda=1, scale_pos_weight=1, base_score=0.5, seed=0, missing=None)
+model = xgboost.XGBRegressor(max_depth=2, learning_rate=0.45, n_estimators=800, silent=True, objective='reg:linear', nthread=-1, gamma=0.008, min_child_weight=1, max_delta_step=1, subsample=1, colsample_bytree=1, colsample_bylevel=1, reg_alpha=0, reg_lambda=1, scale_pos_weight=1, base_score=0.5, seed=0, missing=None)
 model.fit(X_train, y_train)
 
 # make predictions for test data
